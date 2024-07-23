@@ -83,7 +83,6 @@ def print_results(config: GameConfig, results: SimulationResults):
     print(f"\n--- Resultados de {config.num_simulations} simulaciones ---")
     print(f"Victorias: {results.wins} ({results.wins/config.num_simulations*100:.2f}%)")
     print(f"Derrotas: {results.losses} ({results.losses/config.num_simulations*100:.2f}%)")
-    print(f"Empates: {config.num_simulations - results.wins - results.losses} ({(config.num_simulations - results.wins - results.losses)/config.num_simulations*100:.2f}%)")
     print(f"\nPromedio de rondas por juego: {results.total_rounds/config.num_simulations:.2f}")
     print(f"Balance promedio final: ${results.total_balance/config.num_simulations:.2f}")
     print(f"Máximo balance alcanzado: ${results.max_balance}")
